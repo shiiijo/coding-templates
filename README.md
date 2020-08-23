@@ -1,17 +1,1 @@
-# coding-templates
 
-
- b[n-1]=Integer.MIN_VALUE;
-            //b is second array which has resut of array a
-            int c=1 ;int max_count=0 ;int prev=-1;
-            for(int i:b){
-                if(i==prev)
-                    ++c;
-                else {
-                    max_count = Math.max(max_count, c);
-                    c = 1;
-                    prev = i;
-                }
-            }
-            System.out.println(max_count+1);
-        }
